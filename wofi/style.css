@@ -1,0 +1,126 @@
+/* The name of the window itself */
+#window {
+  background-color: #1a3a2e;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+  border: 3px solid #7fb894;
+  border-top: 3px solid #9fd4af;
+  font-size: 1.2rem;
+}
+
+/* The name of the box that contains everything */
+#outer-box {
+  background-color: #1a3a2e;
+}
+
+/* The name of the search bar */
+#input {
+  background-color: #2d5f4d;
+  color: #b8e6c9;
+  border: none;
+  border-bottom: 3px solid #0f2419;
+  padding: 0.8rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 0;
+  font-family: "Terminess Nerd Font", monospace;
+  font-weight: bold;
+}
+
+#input:focus, 
+#input:focus-visible, 
+#input:active {
+  border: none;
+  border-bottom: 3px solid #7fb894;
+  outline: none;
+  background-color: #3d6f5d;
+  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+#input::placeholder {
+  color: #7fb894;
+}
+
+/* The name of the scrolled window containing all of the entries */
+#scroll {
+  background-color: #1a3a2e;
+  border: 2px solid #2d5f4d;
+  border-top: 0;
+}
+
+/* The name of the box containing all of the entries */
+#inner-box {
+  background-color: #1a3a2e;
+  padding: 0.2rem;
+}
+
+/* The name of all entries */
+#entry {
+  color: #b8e6c9;
+  background-color: #2d5f4d;
+  padding: 0.6rem 1rem;
+  margin: 2px;
+  border: 2px solid #1a3a2e;
+  border-radius: 0;
+  font-family: "Terminess Nerd Font", monospace;
+  transition: all 0.1s ease;
+}
+
+#entry:hover {
+  background-color: #3d6f5d;
+  border: 2px solid #7fb894;
+  color: #9fd4af;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+#entry:selected {
+  color: #0f2419;
+  background-color: #7fb894;
+  border: 3px solid #9fd4af;
+  border-top: 3px solid #b8e6c9;
+  border-bottom: 3px solid #1a3a2e;
+  outline: none;
+  font-weight: bold;
+  box-shadow: inset 0 2px 0 rgba(184, 230, 201, 0.4), inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* The name of all images in entries displayed in image mode */
+#img {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.6rem;
+}
+
+/* The name of all the text in entries */
+#text {
+  color: inherit;
+  font-size: 1rem;
+}
+
+#entry:selected #text {
+  color: #0f2419;
+  font-weight: bold;
+}
+
+/* The name of all boxes shown when expanding entries with multiple actions */
+#expander {
+  background-color: #0f2419;
+  border: 2px solid #2d5f4d;
+  border-top: 0;
+}
+
+#expander #entry {
+  background-color: #0f2419;
+  border: 1px solid #1a3a2e;
+  padding-left: 2rem;
+}
+
+#expander #entry:hover {
+  background-color: #2d5f4d;
+  border: 1px solid #7fb894;
+}
+
+#expander #entry:selected {
+  background-color: #7fb894;
+  color: #0f2419;
+  border: 2px solid #9fd4af;
+}
